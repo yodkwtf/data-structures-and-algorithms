@@ -1,6 +1,6 @@
-# JavaScript Algorithms and Data Structures
+# Data Structures and Algorithms
 
-Welcome to the **JavaScript Algorithms and Data Structures** repository! This repository contains a collection of code samples, notes, and exercises created while learning algorithms and data structures in JavaScript.
+Welcome to the **Data Structures and Algorithms** repository! This repository contains a collection of code samples, notes, and exercises created while learning algorithms and data structures in JavaScript. This repository is a basic to advanced guide to the most common DSA concepts.
 
 ## Contents
 
