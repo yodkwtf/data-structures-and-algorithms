@@ -4,6 +4,11 @@ Welcome to the **Data Structures and Algorithms** repository! This repository co
 
 ## Contents
 
+#### Big-O Notation
+
+- [Introduction](./Big-O%20Notation/readme.md)
+- [Timing Our Code](./Big-O%20Notation/01-timing-our-code.js)
+
 ## Resources
 
 - [A Basic Roadmap to DSA](https://dynalist.io/d/nXXVAcgAsj62GW-XaIiJS3o9)
@@ -21,7 +26,7 @@ Welcome to the **Data Structures and Algorithms** repository! This repository co
 
 ## To-Do's
 
-- [ ] Ramp up all the [Roadmap topics](./notes/roadmap-topics.md)
+- [ ] Ramp up all the [Roadmap topics](./resources/roadmap-topics.md)
 
 ## Contact
 
