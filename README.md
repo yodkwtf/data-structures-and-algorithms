@@ -8,6 +8,7 @@ Welcome to the **Data Structures and Algorithms** repository! This repository co
 
 - [Introduction](./Big-O%20Notation/big-o-notation.md)
 - [Timing Our Code](./Big-O%20Notation/01-timing-our-code.js)
+- [Min and Max Examples](./Big-O%20Notation/02-min-max-examples.js)
 
 ## Resources
 
