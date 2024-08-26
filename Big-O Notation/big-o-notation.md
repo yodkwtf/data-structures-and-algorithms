@@ -74,6 +74,44 @@ logAtMost5(10); // Logs 1, 2, 3, 4, 5
 
 In the above code, the time complexity of the `logAtMost5` function is O(1) because the loop runs only 5 times in the worst-case scenario.
 
-###### Big-O Chart
+#### Big-O Chart
 
 ![Big-O Chart](https://hsuan.info/images/BigO.jpeg)
+
+## Space Complexity
+
+Space complexity is a measure of the amount of working storage an algorithm needs. It is used to describe the amount of memory an algorithm uses as the input grows. It is also measured in Big-O notation.
+
+Usually, when we talk about Space Complexity, it refers to auxiliary space complexity. It is the space required by the algorithm, not including space taken up by the inputs.
+
+#### Rules for Space Complexity
+
+1. Most Primitives (booleans, numbers, undefined, null) are constant space: **O(1)**
+2. Strings require **O(n)** space (where n is the string length)
+3. Reference types are generally **O(n)**, where n is the length (for arrays) or the number of keys (for objects)
+
+###### Examples:
+
+```js
+function sum(arr) {
+  let total = 0;
+  for (let i = 0; i < arr.length; i++) {
+    total += arr[i];
+  }
+  return total;
+}
+```
+
+In the above code, the space complexity of the `sum` function is O(1) because the space required by the algorithm is constant no matter how large the input is.
+
+```js
+function double(arr) {
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    newArr.push(2 * arr[i]);
+  }
+  return newArr;
+}
+```
+
+In the above code, the space complexity of the `double` function is O(n) because the space required by the algorithm grows linearly with the size of the input.

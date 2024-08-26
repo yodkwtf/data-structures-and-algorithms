@@ -11,30 +11,6 @@ Welcome to the **Data Structures and Algorithms** repository! This repository co
 - [Time Complexity](./Big-O%20Notation/02-time-complexity.js)
 - [Space Complexity](./Big-O%20Notation/03-space-complexity.js)
 
-#### Algorithms
-
-1. [Recursion](./Algorithms/Recursion/01-introduction.js)
-
-   - [Introduction](./Algorithms/Recursion/01-introduction.js)
-   - [Helper Method Recursion](./Algorithms/Recursion/02-helper-method-recursion.js)
-   - [Pure Recursion](./Algorithms/Recursion/03-pure-recursion.js)
-   - [Common Recursion Pitfalls](./Algorithms/Recursion/04-common-pitfalls.js)
-   - [Recursion Practice Problems](./Algorithms/Recursion/05-practice-problems.js)
-
-2. Searching Algorithms
-
-   - [Linear Search](./Algorithms/Searching/01-linear-search.js)
-   - [Binary Search](./Algorithms/Searching/02-binary-search.js)
-   - [Naive String Search](./Algorithms/Searching/03-naive-string-search.js)
-
-3. Sorting Algorithms
-   - [Bubble Sort](./Algorithms/Sorting/01-bubble-sort.js)
-   - [Selection Sort](./Algorithms/Sorting/02-selection-sort.js)
-   - [Insertion Sort](./Algorithms/Sorting/03-insertion-sort.js)
-   - [Merge Sort](./Algorithms/Sorting/04-merge-sort.js)
-   - [Quick Sort](./Algorithms/Sorting/05-quick-sort.js)
-   - [Radix Sort](./Algorithms/Sorting/06-radix-sort.js)
-
 ## Resources
 
 - [A Basic Roadmap to DSA](https://dynalist.io/d/nXXVAcgAsj62GW-XaIiJS3o9)
