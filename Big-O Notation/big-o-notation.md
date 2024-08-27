@@ -1,17 +1,18 @@
 ## Big-O Notation
 
-Big-O notation is a way to describe the performance of an algorithm. It is used to describe the efficiency of an algorithm in terms of time and space complexity. It is a mathematical notation that describes how the runtime and the space utilization of an algorithm scales as the input grow.
-
-It is basically a measure to find the best and most optimized solution for a problem out of all possible solutions. It is used to compare different algorithms and find the best one for a given problem.
+- Describes algorithm performance in terms of time and space complexity
+- Shows how runtime and space usage scale with input size
+- Helps find the most optimized solution
 
 #### Why Big-O Notation?
 
-If a data size is small, then the time and space complexity of an algorithm may not matter much. But as the data size grows, the efficiency of the algorithm becomes more important.
+- Important when data size is large
+- Identifies the most efficient algorithm
 
 ###### Example:
 
 ```js
-// Function to reverse the given list of numbers
+// Function to reverse a list of numbers
 function reverseList(list) {
   let reversedList = [];
   for (let i = list.length - 1; i >= 0; i--) {
@@ -21,30 +22,30 @@ function reverseList(list) {
 }
 ```
 
-In the above code, the time complexity of the `reverseList` function is O(n) where n is the number of elements in the list. If we ony have 5 elements in the list, then the time complexity of the function is O(5). But if we have millions and millions of elements in the list, then the time complexity of the function is O(millions). Hence, we are always looking for the best and most optimized solution for a problem.
+- **Time Complexity**: O(n), where n is the number of elements
+- Time complexity is less significant for small lists
+- Crucial for large lists
 
 #### How to Calculate Big-O?
 
-Big-O notation is calculated based on the number of operations an algorithm performs. It is calculated based on the worst-case scenario.
+- Based on the number of operations in the worst-case scenario
 
-Here are some common Big-O notations:
+Common Big-O notations:
 
-- O(1) - Constant Time
-- O(log n) - Logarithmic Time
-- O(n) - Linear Time
-- O(n log n) - Linearithmic Time
-- O(n^2) - Quadratic Time
-- O(2^n) - Exponential Time
+- **O(1)**: Constant Time
+- **O(log n)**: Logarithmic Time
+- **O(n)**: Linear Time
+- **O(n log n)**: Linearithmic Time
+- **O(n^2)**: Quadratic Time
+- **O(2^n)**: Exponential Time
 
 #### Big-O Rules
 
-In the big picture, we only care about the most significant terms in the time complexity. The terms which make the Big-O chart go up or down. Here are some rule of thumbs for Big-O:
-
-1. **Constants Don't Matter**: If an algorithm takes 5 operations or 100 operations, it is still O(1) time complexity.
-2. **Drop the Constants**: If an algorithm takes 5n operations, then the time complexity is O(n).
-3. **Different Terms for Inputs**: If an algorithm takes n operations in the outer loop and m operations in the inner loop, then the time complexity is O(n \* m).
-4. **Drop the Non-Dominant Terms**: If an algorithm takes n^2 + n operations, then the time complexity is O(n^2).
-5. **Different Inputs for Different Variables**: If an algorithm takes n operations for one input and m operations for another input, then the time complexity is O(n + m).
+1. **Constants Don't Matter**: O(1) remains O(1) regardless of the number of operations
+1. **Drop the Constants**: O(5n) simplifies to O(n)
+1. **Different Terms for Inputs**: O(n \* m) if there are nested loops with n and m operations
+1. **Drop Non-Dominant Terms**: O(n^2 + n) simplifies to O(n^2)
+1. **Different Inputs for Different Variables**: O(n + m) if there are separate loops for n and m operations
 
 ###### Examples:
 
@@ -59,7 +60,7 @@ logAtLeast5(3); // Logs 1, 2, 3, 4, 5
 logAtLeast5(10); // Logs 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
 ```
 
-In the above code, the time complexity of the `logAtLeast5` function is O(n) because in the worst-case scenario, the loop runs n times.
+- **Time Complexity**: O(n) in the worst case
 
 ```js
 function logAtMost5(n) {
@@ -72,7 +73,7 @@ logAtMost5(3); // Logs 1, 2, 3
 logAtMost5(10); // Logs 1, 2, 3, 4, 5
 ```
 
-In the above code, the time complexity of the `logAtMost5` function is O(1) because the loop runs only 5 times in the worst-case scenario.
+- **Time Complexity**: O(1) since the loop runs only 5 times at most even in worst case
 
 #### Big-O Chart
 
@@ -80,15 +81,15 @@ In the above code, the time complexity of the `logAtMost5` function is O(1) beca
 
 ## Space Complexity
 
-Space complexity is a measure of the amount of working storage an algorithm needs. It is used to describe the amount of memory an algorithm uses as the input grows. It is also measured in Big-O notation.
-
-Usually, when we talk about Space Complexity, it refers to auxiliary space complexity. It is the space required by the algorithm, not including space taken up by the inputs.
+- Measures the amount of working storage an algorithm needs
+- Describes memory usage as input grows
+- Measured in Big-O notation
 
 #### Rules for Space Complexity
 
-1. Most Primitives (booleans, numbers, undefined, null) are constant space: **O(1)**
-2. Strings require **O(n)** space (where n is the string length)
-3. Reference types are generally **O(n)**, where n is the length (for arrays) or the number of keys (for objects)
+1. **Primitives** (booleans, numbers, undefined, null): O(1)
+1. **Strings**: O(n) where n is the length of the string
+1. **Reference Types**: O(n), where n is length (arrays) or number of keys (objects)
 
 ###### Examples:
 
@@ -102,7 +103,7 @@ function sum(arr) {
 }
 ```
 
-In the above code, the space complexity of the `sum` function is O(1) because the space required by the algorithm is constant no matter how large the input is.
+- **Space Complexity**: O(1) because the space needed doesn't grow with input size
 
 ```js
 function double(arr) {
@@ -114,33 +115,25 @@ function double(arr) {
 }
 ```
 
-In the above code, the space complexity of the `double` function is O(n) because the space required by the algorithm grows linearly with the size of the input.
+- **Space Complexity**: O(n) because space grows linearly with input size
 
 ## Logarithms
 
-Big-O notation is often expressed in terms of logarithms. Logarithms are the inverse of exponentiation. They are used to describe the rate of growth of a function. The base of the logarithm is usually 2, 10, or e.
+- Inverse of exponentiation
+- Describes the rate of growth of a function
+- Common bases: 2, 10, e
 
 The general form of a logarithm is:
 
-> <p>log<sub>n</sub>(value) = exponent ---> n<sup>exponent</sup> = value</p>
+> <p>log<sub>base</sub>(value) = exponent ---> base<sup>exponent</sup> = value</p>
 
 #### Examples:
 
-- <p>log<sub>2</sub>(8) = 3 ---> 2<sup>3</sup> = 8</p>
-
-  In the above example, the logarithm of 8 to the base 2 is 3 because 2 raised to the power of 3 is 8.
-
-- <p>log<sub>5</sub>(25) = 2 ---> 5<sup>2</sup> = 25</p>
-
-  In the above example, the logarithm of 25 to the base 5 is 2 because 5 raised to the power of 2 is 25.
+- log<sub>2</sub>(8) = 3 because 2<sup>3</sup> = 8
+- log<sub>5</sub>(25) = 2 because 5<sup>2</sup> = 25
 
 #### Logarithmic Time Complexity
 
-Logarithmic time complexity is represented as O(log n). It is the most efficient time complexity after O(1). It is commonly found in algorithms that divide the problem in half each time.
-
-It may come up a lot in the following scenarios:
-
-- Searching algorithms like Binary Search
-- Efficient sorting algorithms like Quick Sort
-- Divide and conquer algorithms like Merge Sort
-- Recursion involves logarithmic space complexity
+- Represented as O(log n)
+- Common in algorithms dividing the problem in half each time
+- Appears in searching algorithms (e.g., Binary Search), efficient sorting algorithms (e.g., Quick Sort), divide and conquer algorithms (e.g., Merge Sort), and recursion
