@@ -115,3 +115,32 @@ function double(arr) {
 ```
 
 In the above code, the space complexity of the `double` function is O(n) because the space required by the algorithm grows linearly with the size of the input.
+
+## Logarithms
+
+Big-O notation is often expressed in terms of logarithms. Logarithms are the inverse of exponentiation. They are used to describe the rate of growth of a function. The base of the logarithm is usually 2, 10, or e.
+
+The general form of a logarithm is:
+
+> <p>log<sub>n</sub>(value) = exponent ---> n<sup>exponent</sup> = value</p>
+
+#### Examples:
+
+- <p>log<sub>2</sub>(8) = 3 ---> 2<sup>3</sup> = 8</p>
+
+  In the above example, the logarithm of 8 to the base 2 is 3 because 2 raised to the power of 3 is 8.
+
+- <p>log<sub>5</sub>(25) = 2 ---> 5<sup>2</sup> = 25</p>
+
+  In the above example, the logarithm of 25 to the base 5 is 2 because 5 raised to the power of 2 is 25.
+
+#### Logarithmic Time Complexity
+
+Logarithmic time complexity is represented as O(log n). It is the most efficient time complexity after O(1). It is commonly found in algorithms that divide the problem in half each time.
+
+It may come up a lot in the following scenarios:
+
+- Searching algorithms like Binary Search
+- Efficient sorting algorithms like Quick Sort
+- Divide and conquer algorithms like Merge Sort
+- Recursion involves logarithmic space complexity
