@@ -7,9 +7,14 @@ Welcome to the **Data Structures and Algorithms** repository! This repository co
 #### Big-O Notation
 
 - [Introduction](./Big-O%20Notation/big-o-notation.md)
-- [Timing Our Code](./Big-O%20Notation/01-timing-our-code.js)
-- [Time Complexity](./Big-O%20Notation/02-time-complexity.js)
-- [Space Complexity](./Big-O%20Notation/03-space-complexity.js)
+- [Time Complexity](./Big-O%20Notation/big-o-notation.md#time-complexity)
+- [Big-O Chart](./Big-O%20Notation/big-o-notation.md#big-o-chart)
+- [Space Complexity](./Big-O%20Notation/big-o-notation.md#space-complexity)
+
+#### Problem Solving
+
+- [Introduction](./Problem%20Solving/problem-solving.md)
+- [Steps to Solve a Problem](./Problem%20Solving/problem-solving.md#steps-to-solve-a-problem)
 
 ## Resources
 
